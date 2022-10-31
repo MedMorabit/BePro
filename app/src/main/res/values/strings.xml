@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BeProf</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="daily_quote_to_help_you_be_more_motivated">Daily Quote to help you be more motivated</string>
+    <string name="notes">You can take your daily notes</string>
+    <string name="tasks">You can take your daily tasks</string>
+    <string name="tablayout">tablayout</string>
+</resources>

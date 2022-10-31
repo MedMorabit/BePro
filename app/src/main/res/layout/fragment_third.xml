@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_bg"
+    android:layout_height="match_parent"
+    tools:context=".screens.FirstFragment">
+
+    <ImageView
+        android:id="@+id/notesImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:src="@drawable/behappy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:fontFamily="@font/fredoka_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:text="Quotes"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_40sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesImage">
+
+    </TextView>
+
+    <TextView
+        android:fontFamily="@font/caveat"
+
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_quote_to_help_you_be_more_motivated"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="16dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/finishPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:background="@drawable/bg_edittext"
+        android:fontFamily="@font/caveat"
+        android:padding="@dimen/_8sdp"
+        android:text="Finish"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.775">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

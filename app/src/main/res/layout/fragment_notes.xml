@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_bg"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NotesFragment">
+
+<include layout="@layout/toolbar_note"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar">
+
+</include>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:queryHint="search"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:id="@+id/search"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/search_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+    </androidx.appcompat.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/notesRecycler"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/search"
+        app:layout_constraintStart_toStartOf="@+id/search"
+        app:layout_constraintTop_toBottomOf="@+id/search">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progressNote"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/notesRecycler"
+        app:layout_constraintStart_toStartOf="@+id/notesRecycler"
+        app:layout_constraintTop_toTopOf="@+id/notesRecycler">
+
+    </ProgressBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:backgroundTint="@color/red"
+        app:borderWidth="0dp"
+        android:id="@+id/addNoteFAB"
+         android:theme="@style/Theme.BeProf.FloatingAccentButtonOverlay"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/notesRecycler"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

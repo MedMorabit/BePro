@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_130sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_6sdp"
+    android:layout_margin="@dimen/_4sdp"
+    android:id="@+id/cardNote"
+    app:cardElevation="@dimen/_8sdp"
+    android:layout_height="@dimen/_110sdp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constraint"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textAlignment="center"
+            android:paddingStart="@dimen/_5sdp"
+            android:id="@+id/titleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:textColor="@color/black"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="Note1"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/titleNote"
+            app:layout_constraintStart_toStartOf="@+id/titleNote"
+            app:layout_constraintTop_toBottomOf="@+id/titleNote"
+            app:layout_constraintVertical_bias="0.0">
+
+        </View>
+
+        <TextView
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:id="@+id/noteText"
+            android:padding="@dimen/_4sdp"
+            android:text="work hard to achive your goals"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toTopOf="@+id/dateNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleNote">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dateNote"
+            android:text="2022/09/22"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
